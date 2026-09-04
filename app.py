@@ -687,18 +687,7 @@ elif page == "📊 Analytics":
 
     if st.session_state.history:
 
-        df = pd.DataFrame(
-            st.session_state.history
-        )
-
-        st.dataframe(
-            df,
-            use_container_width=True
-        )
-
-        st.download_button(
-            "⬇️ Download System Report",
-            df.to_csv(index=False),
-            "AI_Embedded_Immune_Report.csv",
+      "AI_Embedded_Immune_Report.csv",
             "text/csv"
-    )
+            )
+        
